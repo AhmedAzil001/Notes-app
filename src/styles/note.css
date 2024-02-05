@@ -1,0 +1,151 @@
+.list-container,.create-note{
+    max-width: 1400px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.list-container> h1{
+    color: #1D2B53;
+    text-transform: capitalize;
+}
+
+.note-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 1.5rem;
+}
+
+.note-card{
+    background-color: #fef68a;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    min-height: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 10px #d1dcdb;
+}
+
+.note-card:hover{
+    transform: scale(1.005);
+}
+
+.note-section>h5{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1D2B53;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.note-section>p{
+    font-size: 1rem;
+    color: #1D2B53;
+    margin: 2px;
+    word-wrap: break-word;
+}
+
+.note-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-footer > span{
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    color: #1D2B53;
+}
+
+.note-btn{
+    display: flex;
+    align-items: center;
+}
+
+.note-btn >svg{
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.9rem;
+    transition: all 0.3s;
+}
+
+
+.note-btn > svg:hover{
+    transform: scale(1.05);
+}
+
+.add{
+    background-color: #67d7cc;
+}
+
+#title-input{
+    background-color: #67d7cc;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#title-input::placeholder{
+    color: #1D2B53;
+}
+
+textarea{
+    resize: none;
+    background-color: #67d7cc;
+    border: none;
+    font-size: 0.9rem;
+    color: #1D2B53;
+    width: 100%;
+}
+
+textarea::placeholder{
+    color: #1D2B53;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.add-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-footer > span{
+    background-color: #1D2B53;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    word-spacing: 1px;
+    justify-content: space-between;
+}
+
+.add-footer > a{
+    color: #1D2B53;
+}
+
+.add-footer>svg{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#search-input{
+    margin-bottom: 3rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
